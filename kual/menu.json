@@ -1,0 +1,19 @@
+{
+  "name": "KDAP - Kindle Paint",
+  "icon": "/mnt/us/kdap/icons/kdap_icon.png",
+  "items": [
+    {
+      "name": "Start KDAP",
+      "action": "sh /mnt/us/kdap/bin/start.sh",
+      "exitmenu": true
+    },
+    {
+      "name": "Stop KDAP",
+      "action": "sh /mnt/us/kdap/bin/stop.sh"
+    },
+    {
+      "name": "About",
+      "info": "KDAP v1.8 - Kindle Drawing & Painting\nKindle Voyage (952x972 logic)\n8 Layers / HTTP Remote Input / .kdap files\n© MIT License"
+    }
+  ]
+}

@@ -1,6 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32988826/README.md)
-# KDAP-kindle-drawing-and-Painting-
-this is an tool to use kindle to drawing and painting
 # KDAP - Kindle Drawing & Painting
 
 为 Kindle（特别适配 Voyage / K5 系列）打造的灰度绘画软件。

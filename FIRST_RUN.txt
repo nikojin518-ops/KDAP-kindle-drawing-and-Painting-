@@ -1,0 +1,34 @@
+KDAP v1.8 —— 首次安装必读
+============================
+
+本包 不 包含 FBInk 二进制（它用 GPLv2，需另行获取）。
+启动前请把 fbink 放到下面这个位置，否则 KDAP 无法在屏幕上画图：
+
+    /mnt/us/kdap/bin/fbink
+
+获取方法：
+1) 打开 https://github.com/NiLuJe/FBInk/releases
+2) 下载 "FBInk-x.x.x-Kindle.zip"（别下 "Source code"）
+3) 解压，进 K5/bin/ 目录，取出文件 fbink（无后缀）
+4) 拷到上面路径，并给执行权限：
+       cp fbink /mnt/us/kdap/bin/fbink
+       chmod +x /mnt/us/kdap/bin/fbink
+5) 验证：/mnt/us/kdap/bin/fbink -m "FBInk OK"
+   屏幕显示文字即装对（Voyage 用 K5 版，别用 K3）
+
+已经装了 NiLuJe USBNetwork 的设备通常系统里已有 fbink，
+KDAP 会自动找到；若没有，就按上面手动放。
+
+安装步骤：
+  a) 把 KDAP-v1.8/ 整个目录拷到 Kindle 的 /mnt/us/kdap/
+  b) 把 KDAP-v1.8/kual/menu.json 和 config.xml 放到 /mnt/us/extensions/kdap/
+     放法：
+       KDAP-v1.8/kual/menu.json   ->  /mnt/us/extensions/kdap/menu.json
+       KDAP-v1.8/kual/config.xml  ->  /mnt/us/extensions/kdap/config.xml
+  c) 给权限：
+       chmod +x /mnt/us/extensions/kdap/bin/*.sh   (如该目录有脚本)
+       chmod +x /mnt/us/kdap/bin/*.sh
+       chmod +x /mnt/us/kdap/kdap.py
+  d) KUAL -> Start KDAP
+
+排错：cat /tmp/kdap.log
